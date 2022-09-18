@@ -1,0 +1,201 @@
+.colorfondo { /* Color del fondo de todas las paginas*/
+    background-color: #FCBF1E;
+    width: 100%;
+}
+
+.head { /*Color de fondo del encabezado*/
+    background-color: #FCBF1E;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.subtitulo { /*CSS del subtitulo (30 años)*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    background-color: #035AA6;
+    border-bottom: 2px solid #FCBF1E;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #FCBF1E;
+    width: 100%;
+    margin: 0px;
+}
+
+header { /*CSS del contenedor del titulo y menu*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #035AA6;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+}
+
+header strong { /*CSS del Tituo (complejo educativo)*/
+    margin-right: auto;
+    font-size: 23px;
+    color: #FCBF1E;
+    padding-left: 15px;
+}
+
+header ul { /*CSS del contenedor del menu*/
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header ul li { /*CSS de los contenedores de cada item del menu*/
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+header ul li a {/*CSS de cada item del menu*/
+    color: #FCBF1E;
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    
+
+}
+
+body { /*Reset de box modeling de todo el cuerpo*/
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #120136;
+}
+
+/*------------CSS DEL INDEX-------------*/
+
+#pindex { /*Parrafo de index (otra escuela)*/
+    color: #FCBF1E;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+.aindex { /*CSS de los nombres de los niveles*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    color: black;
+}
+
+.iul {/*CSS de los contenedores de los detalles de los niveles*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    width: 100%;
+    margin: 10px;
+    padding-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iimg {/*CSS de las fotos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    border: 1px solid;
+}
+
+.isection {/*CSS de los contenedores de cada elemento del contenido principal*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.cajaindex {/*CSS del contenedor de los contenedores de cada elemento del contenido principal*/
+    border-right: #120136 solid 50px;
+    border-left: #120136 solid 50px;
+}
+
+/*------------CSS DE NIVEL MEDIO-------------*/
+
+.cajamedio {/*CSS del contenedor de los contenedores de cada elemento del contenido principal*/
+    margin-right: 7%;
+    margin-left: 7%;
+    height: auto;
+    background-color: #120136;
+}
+
+
+#medioh2{/*h2 de Medio (Nivel Medio)*/
+    color: #FCBF1E;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+#cpmedio{/*Contenedor de parrafo de medio*/
+    color: #FCBF1E;
+    text-align: justify;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+#pmedio{/*Parrafo de Medio*/
+
+    margin-left: 7%;
+    margin-right: 7%;
+    
+}
+
+.gridmedio{
+    display: grid;
+    grid-template-rows: 0fr 1fr 1px ;
+    grid-template-columns: 1fr 1fr 3fr ;
+    grid-template-areas: "a a b " "a a c " "d d d " ;
+    background-color: #035AA6;
+    border: solid black;
+}
+
+.iamgrid{/*Item a Medio Grid*/
+    background-color: aliceblue;
+    grid-area: a;
+}
+
+.imggrid{  /*Imagen del Grid*/
+    width: 100%;
+    height: 100%;
+    border: 2px #FCBF1E solid;
+}
+
+.ibmgrid{/*Item b Medio Grid*/
+    background-color: #FCBF1E;
+    grid-area: b;
+}
+
+.icmgrid{/*Item c Medio Grid*/
+    background-color: orange;
+    grid-area: c;
+}
+
+.idmgrid{/*Item d Medio Grid*/
+    background-color: red;
+    grid-area: d;
+}
+
+form{ /*Color de la letra de los formularios*/
+    color: #FCBF1E;
+}
