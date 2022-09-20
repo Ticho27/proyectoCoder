@@ -216,11 +216,11 @@ body { /*Reset de box modeling de todo el cuerpo*/
 
 .divform{
     background-color: rgb(22, 24, 18);
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 2px solid #FCBF1E;
-    height: 200px;
-    width: 86%;
+    height: 180px;
+    width: 50%;
 }
 
 form{ /*Color de la letra de los formularios*/
