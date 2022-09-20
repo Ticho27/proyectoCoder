@@ -9,6 +9,23 @@
     margin: 0px;
 }
 
+footer{
+    color: #FCBF1E;
+    font-size: 12px;
+    display: flex;
+    margin:2% 7% 2% 7%;
+    justify-content: justify;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer div{
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+}
+
 
 .subtitulo { /*CSS del subtitulo (30 años)*/
     font-family: Arial, Helvetica, sans-serif;
@@ -98,7 +115,7 @@ body { /*Reset de box modeling de todo el cuerpo*/
     flex-basis: 50%;
     width: 100%;
     margin: 10px;
-    padding-left: 10%;
+    padding-left: 12%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -126,12 +143,7 @@ body { /*Reset de box modeling de todo el cuerpo*/
 
 /*------------CSS DE NIVEL MEDIO-------------*/
 
-.cajamedio {/*CSS del contenedor de los contenedores de cada elemento del contenido principal*/
-    margin-right: 7%;
-    margin-left: 7%;
-    height: auto;
-    background-color: #120136;
-}
+
 
 
 #medioh2{/*h2 de Medio (Nivel Medio)*/
@@ -161,41 +173,118 @@ body { /*Reset de box modeling de todo el cuerpo*/
     
 }
 
-.gridmedio{
-    display: grid;
-    grid-template-rows: 0fr 1fr 1px ;
-    grid-template-columns: 1fr 1fr 3fr ;
-    grid-template-areas: "a a b " "a a c " "d d d " ;
-    background-color: #035AA6;
-    border: solid black;
+/*CCS MAIN MEDIO*/
+
+.colormfondo { /* Color del fondo de todas las paginas*/
+    background-color: #120136;
+    width: 100%;
 }
 
-.iamgrid{/*Item a Medio Grid*/
-    background-color: aliceblue;
+.cajamedio {/*CSS del contenedor de los contenedores de cada elemento del contenido principal*/
+    margin-right: 7%;
+    margin-left: 7%;
+    height: auto;
+    background-color: #120136;
+    border: 1px #FCBF1E solid;
+}
+
+.gridmmedio{ /*Grilla de MAIN NIVEL MEDIO*/
+    display: grid;
+    grid-template-rows:  1fr  ;
+    grid-template-columns: 1fr 1fr 3fr ;
+    grid-template-areas: "a a b " "a a b " ;
+    border: solid #120136 1px;
+}
+
+.iamgrid{/*Item A Medio Grid*/
     grid-area: a;
 }
 
 .imggrid{  /*Imagen del Grid*/
     width: 100%;
     height: 100%;
-    border: 2px #FCBF1E solid;
+    
 }
 
-.ibmgrid{/*Item b Medio Grid*/
+.ibmgrid{/*Item B Medio Grid*/
     background-color: #FCBF1E;
     grid-area: b;
+    padding-left: 5%;
+    font-family: Helvetica;
+    border: 1px black solid;
 }
 
-.icmgrid{/*Item c Medio Grid*/
-    background-color: orange;
-    grid-area: c;
-}
-
-.idmgrid{/*Item d Medio Grid*/
-    background-color: red;
-    grid-area: d;
+.divform{
+    background-color: rgb(22, 24, 18);
+    margin-left: 7%;
+    margin-right: 7%;
+    border: 2px solid #FCBF1E;
+    height: 200px;
+    width: 86%;
 }
 
 form{ /*Color de la letra de los formularios*/
     color: #FCBF1E;
 }
+
+.griddiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.gridfmedio{ /*Grilla de FORM NIVEL MEDIO*/
+    display: grid;
+    grid-template-rows:  100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
+    border: solid #120136 1px;
+}
+.i1fgrid{/*Item 1 FORM Grid*/
+    grid-area: 1;
+    background-color: aliceblue;
+}
+.i2fgrid{/*Item 1 FORM Grid*/
+    grid-area: 2;
+    background-color: aliceblue;
+}
+.i4fgrid{/*Item 2 FORM Grid*/
+    grid-area: 4;
+    width: 100px;
+    height: 20px;
+    margin-top: 5%;
+    background-color: blue;
+}
+.i5fgrid{/*Item 2 FORM Grid*/
+    grid-area: 5;
+    width: 100px;
+    height: 20px;
+    margin-top: 5%;
+    background-color: blue;
+}
+.i6fgrid{/*Item 2 FORM Grid*/
+    grid-area: 6;
+    width: 100px;
+    height: 20px;
+    margin-top: 5%;
+    background-color: blue;
+}
+.i7fgrid{/*Item 3 FORM Grid*/
+    grid-area: 7;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+.i8fgrid{/*Item 3 FORM Grid*/
+    grid-area: 8;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+.i9fgrid{/*Item 3 FORM Grid*/
+    grid-area: 9;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+
