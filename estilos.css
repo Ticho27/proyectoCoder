@@ -3,6 +3,14 @@
     width: 100%;
 }
 
+/*COLORES
+11d452 verde
+#00c6aa gris
+#00b0ff gris azul
+#008eff azulcito
+#4d4dff viotletita
+*/
+
 .head { /*Color de fondo del encabezado*/
     background-color: #FCBF1E;
     width: 100%;
@@ -215,12 +223,14 @@ body { /*Reset de box modeling de todo el cuerpo*/
 }
 
 .divform{
-    background-color: rgb(22, 24, 18);
+    margin-top: 2%;
+    background-color: #120136;
     margin-left: 25%;
     margin-right: 25%;
     border: 2px solid #FCBF1E;
     height: 180px;
     width: 50%;
+
 }
 
 form{ /*Color de la letra de los formularios*/
@@ -228,63 +238,48 @@ form{ /*Color de la letra de los formularios*/
 }
 
 .griddiv{
+    grid-area: 1
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
 
 .gridfmedio{ /*Grilla de FORM NIVEL MEDIO*/
     display: grid;
-    grid-template-rows:  100px 100px 100px;
+    grid-template-rows: 1fr ;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
-    border: solid #120136 1px;
+
 }
-.i1fgrid{/*Item 1 FORM Grid*/
-    grid-area: 1;
-    background-color: aliceblue;
+
+.mgtext{
+    margin-left: 8%;
 }
-.i2fgrid{/*Item 1 FORM Grid*/
-    grid-area: 2;
-    background-color: aliceblue;
-}
-.i4fgrid{/*Item 2 FORM Grid*/
-    grid-area: 4;
+
+.minput{/*Item 1 FORM Grid*/
     width: 100px;
-    height: 20px;
-    margin-top: 5%;
-    background-color: blue;
+    height: 12%;
+    margin-top: 10%;
+    background-color: aquamarine;
+    margin-left: 15%; 
 }
-.i5fgrid{/*Item 2 FORM Grid*/
-    grid-area: 5;
-    width: 100px;
-    height: 20px;
-    margin-top: 5%;
-    background-color: blue;
+
+
+.mtextarea{/*Item 3 FORM Grid*/
+    width: 80%;
+    height: 80px;
+    background-color: aquamarine;
+    margin-top: 8%;
+    margin-right: 10%;
 }
-.i6fgrid{/*Item 2 FORM Grid*/
-    grid-area: 6;
-    width: 100px;
-    height: 20px;
-    margin-top: 5%;
-    background-color: blue;
+.mbutton{/*Item 3 FORM Grid*/
+    width: 70%;
+    height: 22px;
+    background-color: lightblue;
+    margin-top: 4%;
+    margin-right: 10%;
 }
-.i7fgrid{/*Item 3 FORM Grid*/
-    grid-area: 7;
-    width: 100px;
-    height: 20px;
-    background-color: white;
-}
-.i8fgrid{/*Item 3 FORM Grid*/
-    grid-area: 8;
-    width: 100px;
-    height: 20px;
-    background-color: white;
-}
-.i9fgrid{/*Item 3 FORM Grid*/
-    grid-area: 9;
-    width: 100px;
-    height: 20px;
-    background-color: white;
-}
+
 
 
