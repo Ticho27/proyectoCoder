@@ -15,6 +15,7 @@
     background-color: #FCBF1E;
     width: 100%;
     margin: 0px;
+    background-image: linear-gradient(to bottom, #40BAD5 ,#035AA6, #120136);
 }
 
 footer{
@@ -38,7 +39,6 @@ footer div{
 .subtitulo { /*CSS del subtitulo (30 años)*/
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    background-color: #035AA6;
     border-bottom: 2px solid #FCBF1E;
     font-size: 20px;
     font-weight: lighter;
@@ -53,10 +53,11 @@ header { /*CSS del contenedor del titulo y menu*/
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    background-color: #035AA6;
+    /*background-color: #035AA6;*/
     width: 100%;
     height: 30px;
     padding-top: 10px;
+    
 }
 
 header strong { /*CSS del Tituo (complejo educativo)*/
@@ -258,7 +259,7 @@ form{ /*Color de la letra de los formularios*/
 }
 
 .minput{/*Item 1 FORM Grid*/
-    width: 100px;
+    width: 150px;
     height: 12%;
     margin-top: 10%;
     background-color: aquamarine;
@@ -271,14 +272,16 @@ form{ /*Color de la letra de los formularios*/
     height: 80px;
     background-color: aquamarine;
     margin-top: 8%;
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .mbutton{/*Item 3 FORM Grid*/
     width: 70%;
     height: 22px;
     background-color: lightblue;
     margin-top: 4%;
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 
