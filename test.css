@@ -1,0 +1,215 @@
+/*COLORES
+#11d452 verde
+#00c6aa gris
+#00b0ff gris azul
+#008eff azulcito
+#4d4dff viotletita
+*/
+
+.pdiv{
+    display: grid ;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+    border: black solid 1px;
+}
+.bodydiv{
+    grid-area: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.div1{
+    width: 100%;
+    height: 100%;
+    background-color: #11d452;
+    border: black solid 1px;
+}
+.div2{
+    width: 100%;
+    height: 100%;
+    background-color: #00c6aa;
+    border: black solid 1px;
+}
+.div3{
+    width: 100%;
+    height: 100%;
+    background-color: #00b0ff;
+    border: black solid 1px;
+}
+.div4{
+
+    width: 100%;
+    height: 100%;
+    background-color: #008eff;
+    border: black solid 1px;
+}
+
+.div5{
+  
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border: black solid 1px;
+}
+.div6{
+ 
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    border: black solid 1px;
+}
+.div7{
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: black solid 1px;
+}
+.div8{
+ 
+    width: 100%;
+    height: 100%;
+    background-color: goldenrod;
+    border: black solid 1px;
+}
+.div9{
+ 
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    border: black solid 1px;
+}
+
+.bodydiv2{
+    display: grid;
+    grid-template-rows: 100px 100px 100px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c " 
+    "d e f  "
+    "g h i "
+    /*"m n o p"*/ ;
+    
+    border: #11d452 solid 1px;
+    border: black solid 1px;
+}
+
+.diva{
+    grid-area: a;
+    width: 100%;
+    height: 100%;
+    background-color: #11d452;
+    border: black solid 1px;
+}
+.divb{
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    background-color: #00c6aa;
+    border: black solid 1px;
+}
+.divc{
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+    background-color: #00b0ff;
+    border: black solid 1px;
+}
+.divd{
+    grid-area: d;
+    width: 100%;
+    height: 100%;
+    background-color: #008eff;
+    border: black solid 1px;
+}
+
+.dive{
+    grid-area: e;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border: black solid 1px;
+}
+.divf{
+    grid-area: f;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    border: black solid 1px;
+}
+.divg{
+    grid-area: g;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: black solid 1px;
+}
+.divh{
+    grid-area: h;
+    width: 100%;
+    height: 100%;
+    background-color: goldenrod;
+    border: black solid 1px;
+}
+.divi{
+    grid-area: i;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    border: black solid 1px;
+}
+.divj{
+    grid-area: j;
+    width: 100%;
+    height: 100%;
+    background-color: #11d452;
+    border: black solid 1px;
+}
+.divk{
+    grid-area: k;
+    width: 100%;
+    height: 100%;
+    background-color: #00c6aa;
+    border: black solid 1px;
+}
+.divl{
+    grid-area: l;
+    width: 100%;
+    height: 100%;
+    background-color: #00b0ff;
+    border: black solid 1px;
+}
+.divm{
+    grid-area: m;
+    width: 100%;
+    height: 100%;
+    background-color: #008eff;
+    border: black solid 1px;
+}
+
+.divn{
+    grid-area: n;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border: black solid 1px;
+}
+.divo{
+    grid-area: o;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    border: black solid 1px;
+}
+.divp{
+    grid-area: p;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: black solid 1px;
+}

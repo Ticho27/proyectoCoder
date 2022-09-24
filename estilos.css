@@ -3,6 +3,71 @@
     width: 100%;
 }
 
+/*FORMULARIO DE LAS PAGINAS*/
+.divform{ /*Contenedor principal*/
+    margin-top: 2%;
+    background-color: #120136;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 2px solid #FCBF1E;
+    height: 180px;
+    width: 50%;
+
+}
+
+form{ /*Color de la letra de los formularios*/
+    color: #FCBF1E;
+}
+
+.griddiv{ /*Contenedor de los contenedores dentro de la grilla*/
+    grid-area: 1
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.gridfmedio{ /*Grilla de FORM NIVEL MEDIO*/
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+}
+
+.mgtext{
+    margin-left: 8%;
+}
+
+.minput{/*Item 1 FORM Grid*/
+    width: 150px;
+    height: 12%;
+    margin-top: 10%;
+    background-color: aquamarine;
+    margin-left: 15%; 
+}
+
+
+.mtextarea{/*Item 3 FORM Grid*/
+    width: 80%;
+    height: 80px;
+    background-color: aquamarine;
+    margin-top: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.mbutton{/*Item 3 FORM Grid*/
+    width: 70%;
+    height: 22px;
+    background-color: lightblue;
+    margin-top: 4%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+/*FORMULARIO DE LAS PAGINAS*/
+
+
+
 /*COLORES
 11d452 verde
 #00c6aa gris
@@ -76,7 +141,11 @@ header ul { /*CSS del contenedor del menu*/
 header ul li { /*CSS de los contenedores de cada item del menu*/
     flex-grow: 1;
     text-align: center;
+}
 
+header ul li:hover{
+    background-image: linear-gradient(to bottom, #40BAD5 ,#035AA6, #120136);  
+    border: 1px black solid;
 }
 
 header ul li a {/*CSS de cada item del menu*/
@@ -98,24 +167,52 @@ body { /*Reset de box modeling de todo el cuerpo*/
 
 /*------------CSS DEL INDEX-------------*/
 
-#pindex { /*Parrafo de index (otra escuela)*/
+.pindex { /*Parrafo de index (otra escuela)*/
     color: #FCBF1E;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: auto;
 }
 
+.pindexani1{/*Animaciones de P Index*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+.pindexani2{/*Animaciones de P Index*/
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .aindex { /*CSS de los nombres de los niveles*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 150px;
     align-items: center;
     margin: 10px;
     color: black;
+}
+
+.aindex:hover{
+    background-image: linear-gradient(to bottom, #40BAD5 ,#035AA6, #120136);
+    border: 1px black solid;
 }
 
 .iul {/*CSS de los contenedores de los detalles de los niveles*/
@@ -125,15 +222,16 @@ body { /*Reset de box modeling de todo el cuerpo*/
     width: 100%;
     margin: 10px;
     padding-left: 12%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-family: Helvetica;
 }
 
 .iimg {/*CSS de las fotos*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 30%;
     align-items: center;
     border: 1px solid;
 }
@@ -199,9 +297,9 @@ body { /*Reset de box modeling de todo el cuerpo*/
 
 .gridmmedio{ /*Grilla de MAIN NIVEL MEDIO*/
     display: grid;
-    grid-template-rows:  1fr  ;
-    grid-template-columns: 1fr 1fr 3fr ;
-    grid-template-areas: "a a b " "a a b " ;
+    grid-template-rows:  1fr;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "a  b" ;
     border: solid #120136 1px;
 }
 
@@ -212,7 +310,6 @@ body { /*Reset de box modeling de todo el cuerpo*/
 .imggrid{  /*Imagen del Grid*/
     width: 100%;
     height: 100%;
-    
 }
 
 .ibmgrid{/*Item B Medio Grid*/
@@ -223,66 +320,5 @@ body { /*Reset de box modeling de todo el cuerpo*/
     border: 1px black solid;
 }
 
-.divform{
-    margin-top: 2%;
-    background-color: #120136;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 2px solid #FCBF1E;
-    height: 180px;
-    width: 50%;
 
-}
-
-form{ /*Color de la letra de los formularios*/
-    color: #FCBF1E;
-}
-
-.griddiv{
-    grid-area: 1
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-}
-
-.gridfmedio{ /*Grilla de FORM NIVEL MEDIO*/
-    display: grid;
-    grid-template-rows: 1fr ;
-    grid-template-columns: 1fr 1fr 1fr ;
-
-}
-
-.mgtext{
-    margin-left: 8%;
-}
-
-.minput{/*Item 1 FORM Grid*/
-    width: 150px;
-    height: 12%;
-    margin-top: 10%;
-    background-color: aquamarine;
-    margin-left: 15%; 
-}
-
-
-.mtextarea{/*Item 3 FORM Grid*/
-    width: 80%;
-    height: 80px;
-    background-color: aquamarine;
-    margin-top: 8%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-.mbutton{/*Item 3 FORM Grid*/
-    width: 70%;
-    height: 22px;
-    background-color: lightblue;
-    margin-top: 4%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-
-
+/*CCS MAIN INICIAL*/

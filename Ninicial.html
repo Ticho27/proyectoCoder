@@ -65,29 +65,32 @@
 
 
 
-<form>
-    <label>Nombre</label>
-    <input/>
-    <br>
-    <label>Apellido</label>
-    <input/>
-    <br>
-    <label>E-Mail</label>
-    <input/>
-    <br>
-    <select name="Niveles">
-        <option value="I">Inicial</option>
-        <option value="P">Primaria</option>
-        <option value="M">Secundaria</option>
-        <option value="S">Superior</option>
-    </select>
-    <div>Desea recibir nuestro newsletter?</div>
-    <textarea>Comentarios</textarea>
-    <br>
-    <button>Limpiar Formulario</button>
-    <button>Enviar Formulario</button>
+    <div class="divform">
+        <form class="gridfmedio">
+            <div class="griddiv">
+                <h4 class="mgtext">SOLICITAR INFORMACIÓN</h4>
+                <div class="mgtext">¿Queres estudiar en el Liceo Informatico?
+                    Consultanos a travez del formulario y te respondemos a la brevedad
+                </div>
+            </div>
+            <div class="griddiv">
+                <input placeholder="Nombre"  class="minput"/>
+                <input placeholder="Apellido" class="minput" />
+                <input placeholder="E-Mail"class="minput"/>
+            </div>
+            <div class="griddiv">
+                <select name="Niveles" class="mbutton">
+                    <option value="I">Inicial</option>
+                    <option value="M">Secundaria</option>
+                    <option value="P">Primaria</option>
+                    <option value="S">Superior</option>
+                </select >
+                <textarea class="mtextarea" placeholder="Su consulta" ></textarea>
 
-</form>
+                <button class="mbutton">Enviar</button>
+            </div>
+        </form>
+    </div>
 
 <div>
     <footer>
